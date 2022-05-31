@@ -62,7 +62,7 @@
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-    background: linear-gradient(35deg, #8d5f1b, #990011)
+    background: linear-gradient(35deg, #ff5900, #cc0018);
 }
 
 #food {
@@ -91,7 +91,6 @@
 .description {
     text-align: justify;
     transition: 0.2s all ease-in-out;
-
 }
 
 .btn {
@@ -103,6 +102,15 @@
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     color: black;
     cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:last-child() {
+    margin-right: 0;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, rgb(211, 209, 209),rgb(255, 255, 255));
 }
 
 .active {
@@ -114,6 +122,10 @@
 
 }
 
+.active:hover {
+    background: linear-gradient(35deg, #a96f17, #ff001e);
+
+}
 .purchase {
     transform-style: preserve-3d;
 
@@ -136,7 +148,7 @@
     margin: 1rem;
     width: 100%;
     padding: 0.5rem;
-    background: linear-gradient(35deg, #ff7b00, #cc0018);
+    background: linear-gradient(35deg, #e36816, #cc0018);
     color: white;
     font-size: 1rem;
     font-weight: bold;
@@ -144,7 +156,10 @@
     border: none;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     cursor: pointer;
+}
 
+.purchase-btn:hover {
+    opacity: 0.9;
 }
 .hide {
     display: none;
@@ -160,6 +175,13 @@
     padding: 5px;
     color: black;
     font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.value-btn:hover {
+    transform: scale(1.2);
+    color:#d61d32;
+
 }
 
 #number {
@@ -171,7 +193,9 @@
     margin: 0.8rem;
     width: 40px;
     height: 40px;
+    cursor:default;
 }
+
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
