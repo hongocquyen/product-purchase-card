@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* perspective: 1000px; */
+    
+
+}
+
+.container {
+    /* background-color: rgb(160, 103, 103); */
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+
+}
+
+.card {
+    transform-style: preserve-3d;
+    /* min-height: 80vh; */
+    width: 25rem;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0 50px 50px rgba(0,0,0,0.2);
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    padding: 3rem;
+    transition: 0.5s all ease;
+    
+}
+
+.logo {
+    transform-style: preserve-3d;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    padding: 3rem 0;
+    /* background-color: black; */
+    position: relative;
+}
+
+.circle-bg {
+    z-index: 1;
+    background-color: antiquewhite;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: linear-gradient(35deg, #8d5f1b, #990011)
+}
+
+#food {
+    position: absolute;
+    width: 11rem;
+    z-index: 10;
+    transition: 0.5s all ease-in-out;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    transform-style: preserve-3d;
+
+
+}
+.title {
+    width: 100%;
+    transition: 0.2s all ease-in-out;
+
+}
+
+.description {
+    text-align: justify;
+    transition: 0.2s all ease-in-out;
+
+}
+
+.btn {
+    width: 3rem;
+    margin: 1.5rem 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(135deg, white,rgb(237, 237, 237));
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    color: black;
+    cursor: pointer;
+}
+
+.active {
+    border: none;
+    background: linear-gradient(35deg, #6b4814, #dc001a);
+    box-shadow: none;
+
+    color: white;
+
+}
+
+.purchase {
+    transform-style: preserve-3d;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+.purchase-btn {
+    margin: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    background: linear-gradient(35deg, #ff7b00, #cc0018);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    cursor: pointer;
+
+}
+.hide {
+    display: none;
+}
+
+.changeValue-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.value-btn {
+    padding: 5px;
+    color: black;
+    font-size: 1.3rem;
+}
+
+#number {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.2);
+    margin: 0.8rem;
+    width: 40px;
+    height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
