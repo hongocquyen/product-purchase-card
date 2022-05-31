@@ -1,2 +1,2 @@
 # Product-purchase-card
-Asset for shopping-cart project later on.
+Component for shopping-cart project later on.
